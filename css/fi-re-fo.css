@@ -1,0 +1,23 @@
+@charset "utf-8";
+main.section {
+  padding: 2em;
+  background-color: #fff;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.section {
+  margin-bottom: 2em;
+}
+
+.section h2 {
+  color: #005f73;
+  margin-top: 1em;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.3em;
+}
+
+a {
+  color: #0077cc;
+}
+

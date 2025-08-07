@@ -1,0 +1,115 @@
+body{
+  margin: 0;
+  padding: 0; 
+  color: #222;
+  font-family: "Montserrat", "Noto Sans JP", sans-serif;
+}
+
+/* ヘッダーとフッター */
+header, footer {
+  background-color: #003366;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+header{
+  padding: 10px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .logo{
+    display: block;
+    img{
+      display: block;
+      height: 60px;
+    }
+  }
+  nav{
+    hl{
+      display: flex;
+      align-items: center;
+      gap: 50px;
+    }
+    a{
+       margin: 0 10px;
+       color: white;
+       text-decoration: none;
+      }
+    }
+  }
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  display: block;
+  text-decoration: none;
+  color: #003366;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 25px;
+  background-color: #f9f9f9;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  background-color: #ffe066;
+  transform: translateY(-3px);
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ヒーロー */
+.hero {
+  position: relative;
+  text-align: center;
+}
+
+.hero img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.hero-text {
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  transform: transate(-50%, -50%);
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 5px black;
+  padding: 100px 20px; 
+  h1{
+    font-size: 2.5em; margin: 0;
+  }
+}
+
+/* メイン */
+main.section {
+  padding: 2em;
+  background-color: #fff;
+  max-width: 1080px;
+  margin: 0 auto;
+  margin-bottom: 2em;
+  h2 {
+    color: #005f73;
+    margin-top: 1em;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.3em;
+  }
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #0077cc;
+}
+

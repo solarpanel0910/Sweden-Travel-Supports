@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>あなたに最適な旅をご提案</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/check.css">
+  <script src="js/script.js" defer></script>
+  <script src="js/check.js" defer></script>
+</head>
+  <body>
+
+   <header></header>
+
+  <div class="hero">
+    <img src="img/questionaire.avif" alt="ペンを持っている画像">
+    <div class="hero-text">
+      <h1>旅行プラン診断</h1>
+      <p>5つの簡単な質問に答えたいただくだけであなたに合った旅をご提案させていただきます。</p>
+    </div>
+  </div>
+
+  <main>
+    <section id="questionnaire">
+      <h2 id="question-text"></h2>
+      <div id="options"></div>
+      <button id="next-btn" disabled>次へ</button>
+    </section>
+
+    <section id="result" class="hidden">
+      <h2>あなたにおすすめの場所・体験は？</h2>
+      <p id="result-Text"></p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Sweden Guide. All rights reserved.
+  </footer>
+</body>
+</html>
