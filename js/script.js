@@ -1,3 +1,6 @@
+const fabiconContentHTML = `
+  <link rel="icon" href="img/logo.png" type="image/png">
+`
 const headerContentHTML = `
   <h1>
     <a href="index.html" class="logo">
@@ -27,9 +30,11 @@ const footerContentHTML = `
     &copy; 2025 Sweden Travel Support. All rights reserved.
 `
 
+const fabiconElement = document.querySelector('head');
 const headerElement = document.querySelector('header');
 const footerElement = document.querySelector('footer');
 
+fabiconElement.insertAdjacentHTML('beforeend', fabiconContentHTML);
 headerElement.innerHTML = headerContentHTML;
 footerElement.innerHTML = footerContentHTML;
 console.log('test');
